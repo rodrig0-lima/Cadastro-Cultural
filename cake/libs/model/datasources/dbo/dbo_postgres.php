@@ -164,7 +164,7 @@ class DboPostgres extends DboSource {
  * @return resource Result resource identifier
  */
 	function _execute($sql) {
-		return pg_query($this->connection, $sql);
+		return pg_exec($this->connection, $sql);
 	}
 
 /**
